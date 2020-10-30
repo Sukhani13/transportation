@@ -30,7 +30,7 @@ class _ResultsState extends State<Results> {
 
   Future getData() async {
     http.Response response = await http.get("https://api.railwayapi.com/v2/between/source/$stcode/dest/$endcode/date/27-01-2020/apikey/d7kqe59rvz/");
-    data = json.decode(response.body);
+    var data = json.decode(response.body);
     setState(() {
       userData = data["trains"];
     });
