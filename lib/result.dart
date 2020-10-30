@@ -113,7 +113,7 @@ class _ResultsState extends State<Results> {
                     child: Text("Station: ${userData[index]["from_station"]["name"]} to ${userData[index]["to_station"]["name"]}",
                       style: TextStyle(
                         fontSize: 10.0,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),
